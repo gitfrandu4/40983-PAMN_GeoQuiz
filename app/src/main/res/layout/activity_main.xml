@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#f0f0f0"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:text="@string/question_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/false_button"
+            android:background="@drawable/button_background_false"
+            android:textColor="#ffffff"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/true_button"
+            android:background="@drawable/button_background_true"
+            android:textColor="#ffffff"
+            android:elevation="4dp"
+            android:padding="12dp"
+            android:layout_margin="8dp"
+            />
+    </LinearLayout>
+</LinearLayout>
